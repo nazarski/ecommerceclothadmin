@@ -7,4 +7,13 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  middleware: {
+    //...
+    session: {
+      enabled: true,
+      // Add the keys property and provide an array of keys
+      keys: ['L9EHF3OYgTe0', 'SN0HxAxUVYue'],
+    },
+    //...
+  },
 });
